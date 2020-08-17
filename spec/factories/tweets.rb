@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :tweet do
-    texi {Faker::Lorem.sentence}
+    text {Faker::Lorem.sentence}
     image {Faker::Lorem.sentence}
-    association
+    association :user
   end
 end
