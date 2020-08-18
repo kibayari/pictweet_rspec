@@ -56,7 +56,7 @@ RSpec.describe 'ユーザー新規登録', type: :system do
 end
 
 RSpec.describe 'ログイン', type: :system do
-  begore do
+  before do
     @user = FactoryBot.create(:user)
   end
   context 'ログインができるとき' do
